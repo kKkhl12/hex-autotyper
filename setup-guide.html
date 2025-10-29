@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto-Typer Script Setup Guide</title>
+    <style>
+        /* Basic Styling for a clean look */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 25px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        /* Styling for the download button */
+        .download-button {
+            display: block;
+            width: fit-content;
+            margin: 20px auto;
+            padding: 15px 30px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 8px;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .download-button:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+        }
+
+        /* Styling for code blocks */
+        pre {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #bdc3c7;
+            overflow-x: auto; /* Handle long lines of code */
+        }
+        
+        code {
+            font-family: "Courier New", Courier, monospace;
+            color: #c0392b;
+            font-size: 1.1em;
+        }
+
+        /* Responsive video container */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .note {
+            background-color: #fdfae1;
+            border-left: 5px solid #f1c40f;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Auto-Typer Script Setup Guide</h1>
+        <p>Follow these simple steps to get the auto-typer script running on your computer.</p>
+
+        <!-- Step 0: Download the Script -->
+        <h2>Step 1: Download the Script</h2>
+        <p>Click the button below to download the Python script file.</p>
+        <a href="https://cdn.discordapp.com/attachments/1327385988506456207/1433064560197238836/Legit_auto_typer.py?ex=690354e0&is=69020360&hm=0c323ead6bc5fa54fee5720ff89cea56f874218b1f859eac64be809de1abc781&" class="download-button" download>
+            Download Legit_auto_typer.py
+        </a>
+
+        <!-- Step 1: Install Python -->
+        <h2>Step 2: Install Python (and add to PATH)</h2>
+        <p>
+            If you don't have Python, you need to install it. The most important part of the installation is to <strong>check the box that says "Add Python to PATH"</strong>. This allows you to run Python from any folder on your computer.
+        </p>
+        <p>This video clearly demonstrates the process for Windows:</p>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/UvcvS_uSjVA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <!-- Step 2: Install Dependencies -->
+        <h2>Step 3: Install Required Libraries (Modules)</h2>
+        <p>
+            This script needs a specific library called <code>keyboard</code> to work. You can install it using Python's package installer, `pip`.
+        </p>
+        
+        <div class="note">
+            <p><strong>Good News!</strong> The other libraries used, <code>tkinter</code> and <code>ttk</code>, are part of Python's standard library, so you <strong>do not</strong> need to install them separately. They are included when you install Python.</p>
+        </div>
+
+        <ol>
+            <li>
+                <strong>Open your command line tool.</strong>
+                <ul>
+                    <li>On <strong>Windows</strong>, press the Windows Key, type <code>cmd</code> or <code>PowerShell</code>, and press Enter.</li>
+                    <li>On <strong>Mac/Linux</strong>, open the <strong>Terminal</strong> application.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Install the `keyboard` library.</strong>
+                <p>Type the following command into your terminal and press Enter:</p>
+                <pre><code>pip install keyboard</code></pre>
+                <p>
+                    You should see some text as it downloads and installs the package.
+                </p>
+            </li>
+        </ol>
+
+        <!-- Step 3: Run the Script -->
+        <h2>Step 4: Run the Auto-Typer Script</h2>
+        <p>
+            Once everything is installed, you just need to run the script.
+        </p>
+        <ol>
+            <li>
+                <strong>Navigate to your Downloads folder.</strong> In the same terminal window you opened, type the following command and press Enter.
+                <pre><code>cd Downloads</code></pre>
+            </li>
+            <li>
+                <strong>Run the script.</strong> Now, use Python to execute the file. Type this command and press Enter:
+                <pre><code>python Legit_auto_typer.py</code></pre>
+            </li>
+        </ol>
+        <p>The script's window should now appear, and you can start using it!</p>
+    </div>
+
+</body>
+</html>
