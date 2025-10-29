@@ -34,7 +34,7 @@
             text-align: center;
         }
 
-        /* Styling for the download button */
+        /* Styling for the main download button */
         .download-button {
             display: block;
             width: fit-content;
@@ -53,6 +53,24 @@
         .download-button:hover {
             background-color: #2980b9;
             transform: translateY(-2px);
+        }
+
+        /* Styling for the Python download link */
+        .python-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #ffd94b; /* Python yellow */
+            color: #306998; /* Python blue */
+            border: 2px solid #306998;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .python-link:hover {
+            background-color: #ffe066;
         }
 
         /* Styling for code blocks */
@@ -106,24 +124,29 @@
         <h1>Auto-Typer Script Setup Guide</h1>
         <p>Follow these simple steps to get the auto-typer script running on your computer.</p>
 
-        <!-- Step 0: Download the Script -->
+        <!-- Step 1: Download the Script -->
         <h2>Step 1: Download the Script</h2>
         <p>Click the button below to download the Python script file.</p>
         <a href="https://cdn.discordapp.com/attachments/1327385988506456207/1433064560197238836/Legit_auto_typer.py?ex=690354e0&is=69020360&hm=0c323ead6bc5fa54fee5720ff89cea56f874218b1f859eac64be809de1abc781&" class="download-button" download>
             Download Legit_auto_typer.py
         </a>
 
-        <!-- Step 1: Install Python -->
-        <h2>Step 2: Install Python (and add to PATH)</h2>
+        <!-- Step 2: Install Python -->
+        <h2>Step 2: Download & Install Python</h2>
         <p>
-            If you don't have Python, you need to install it. The most important part of the installation is to <strong>check the box that says "Add Python to PATH"</strong>. This allows you to run Python from any folder on your computer.
+            If you don't have Python, you'll need to install it. You can get the latest version for your system from the official website.
         </p>
-        <p>This video clearly demonstrates the process for Windows:</p>
+        <a href="https://www.python.org/downloads/" class="python-link" target="_blank" rel="noopener noreferrer">
+            Download Python from Python.org
+        </a>
+        <p style="margin-top: 20px;">
+            The most important part of the installation is to <strong>check the box that says "Add Python to PATH"</strong>. This allows you to run Python from any folder on your computer. The video below clearly demonstrates this process for Windows:
+        </p>
         <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/UvcvS_uSjVA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://youtu.be/oa7YR5GpJ0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
-        <!-- Step 2: Install Dependencies -->
+        <!-- Step 3: Install Dependencies -->
         <h2>Step 3: Install Required Libraries (Modules)</h2>
         <p>
             This script needs a specific library called <code>keyboard</code> to work. You can install it using Python's package installer, `pip`.
@@ -151,7 +174,7 @@
             </li>
         </ol>
 
-        <!-- Step 3: Run the Script -->
+        <!-- Step 4: Run the Script -->
         <h2>Step 4: Run the Auto-Typer Script</h2>
         <p>
             Once everything is installed, you just need to run the script.
